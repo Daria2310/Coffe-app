@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+.block-items {
+    grid-area: items;
+    }
+
+.block-name {
+    grid-area: name;
+    }
+
+.block-payment {
+    grid-area: payment;
+    }
+
+
+.blocks {
+    display: grid;
+    column-gap: 30px;
+    width: 100%;
+    padding: 30px;
+    grid-template-areas:
+    "items name"
+    "items payment";
+    grid-template-columns: 1fr 1fr;
+    }
+
+.brand-header {
+    font-size: 16px;
+    color: #FBF2C0;
+    background-color: #43281C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+   }
+
+img {
+    position: relative;
+    width: 22px;
+    height: 22pxs; 
+    top: 3px;
+}
+
+.block {
+    background-color: #EEE1D5;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 15px 15px 10px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    }
+
+.block-header {
+    color: #885A2D;
+    font-family: Calibri, sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 20px;
+    }
+ 
+.number-items {
+    color: black;
+    font-weight: lighter;
+    font-size: 16px;
+    grid-area: number;
+}
+
+.coffee-type {
+    color: black;
+    font-weight: bold;
+    grid-area: type;
+    }
+
+.coffee-price {
+    color: black;
+    font-weight: bold;
+    grid-area: price;
+}
+
+.coffee-ingridients {
+    font-size: 14px;
+    color: #B08968;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: ingridients;    
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+        "number type price"
+        "number ingridients price";
+    border-bottom: 2px solid #DDB892;
+    margin-top: 10px;
+    }
+
+.last {
+    border-bottom: none;
+}
+
+.label-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input {
+    background-color: #EEE1D5;
+    border: 2px solid #885A2D;
+    padding: 8px;
+    border-radius: 20px;
+    width: 95%;
+    height: 40px;
+    text-indent: 18px;
+    font-size: 18px;    
+}
+
+
+.input-label {
+    background-color: #EEE1D5;
+    color: #885A2D;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+  }
+
+.input-ccv {
+    max-width: 150px;
+   }
+
+.total-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.total-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.total-sum {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.text {
+   padding-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.checkout {
+    font-size: 16px;
+    background-color: #DEB993;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    }

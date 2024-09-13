@@ -10,7 +10,7 @@ body {
   }
 
 .page {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .block-items {
@@ -29,7 +29,7 @@ body {
 .blocks {
     display: grid;
     column-gap: 30px;
-    width: 100%;
+    max-width: 1200px;
     padding: 30px;
     grid-template-areas:
     "items name"
@@ -60,7 +60,7 @@ img {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding: 15px 15px 10px 15px;
     margin-bottom: 20px;
-    width: 100%;
+    max-width: 550px;
     }
 
 .block-header {
